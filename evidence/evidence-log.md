@@ -8,3 +8,9 @@
 | A2 | evidence/A2-url3.png | Projects list address (no www) | 07.11.2026 17:23 | https://gaziantep.bel.tr/tr/projeler |
 | A2 | evidence/A2-url4.png | Project detail address with long slug | 07.11.2026 17:24 | https://gaziantep.bel.tr/tr/projeler/abdulhamit-han-koprulu-kavsagiyla-trafikte-yeni-donem |
 | A2 | evidence/A2-url5.png | Events page with one query parameter | 07.11.2026 17:25 | https://www.gaziantep.bel.tr/tr/basin/etkinlikler?name=tiyatro |
+
+
+| A3 | evidence/A3-headers.png | Headers panel of the first (document) request | 07.11.2026 20:15 | https://www.gaziantep.bel.tr/ |
+| A3 | evidence/A3-summary.png | Network summary bar: number of requests and total size (cache disabled) | 07.11.2026 20:22 | https://www.gaziantep.bel.tr/ |
+| A3 | evidence/A3-xhr.png | One Fetch/XHR request and its headers | 07.11.2026 21:14 | https://www.gaziantep.bel.tr/ |
+| A3 | evidence/A3-largest.png | Network list sorted by size: largest files are a video and a GIF | 07.11.2026 21:36 | https://www.gaziantep.bel.tr/ |

@@ -19,3 +19,11 @@ I scored five pages against the five URL rules. All five use HTTPS, are written 
 - **Pass**: the URL meets the rule
 - **Partial**: the URL mostly meets the rule but could be improved
 - **N/A**: the rule does not apply to this URL
+
+## A3. One Request, Closely
+
+I reopened the home page with the Network panel open and the cache disabled, which simulated a first-time visit.
+The first request was for the HTML document. It used the GET method and returned status 200, with the content type text/html; charset=UTF-8.
+The HTML file itself was small (about 76 kB), yet the page as a whole made 52 requests and transferred 12.9 MB of data (14.5 MB in total resources). The DOMContentLoaded event fired at 2.87 seconds, and the full page finished loading at 6.35 seconds.
+The only Fetch/XHR requests were POST requests to Google Analytics. They returned status 204 (No Content), so they carried no page content.
+Overall, the page is quite heavy. The three largest files were two video segments (gaziantep.webm, 4.2 MB and 2.4 MB) and one GIF (chatbot2.gif, 2.3 MB), which is used for the live chat icon. Together they total about 8.9 MB, nearly two-thirds of all transferred data. This can slow the website down, especially on mobile devices with slow connections. I will examine this further in B1. [A3]
