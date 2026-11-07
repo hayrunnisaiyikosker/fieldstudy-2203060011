@@ -28,3 +28,6 @@
 | A6 | evidence/A6-elements.png | Elements panel: same menu word found | 07.11.2026 23:11 | https://www.gaziantep.bel.tr/ |
 | A6 | evidence/A6-source-news.png | Raw page source: a news headline from the slider is found | 07.11.2026 23:13 | view-source:https://www.gaziantep.bel.tr/ |
 | A6 | evidence/A6-elements-news.png | Elements panel: same headline found | 07.11.2026 23:14 | https://www.gaziantep.bel.tr/ |
+
+
+| A7 | evidence/A7-seo.png | Console checks: title, meta description, canonical, lang, h1 count, sponsored/ugc count | 08.11.2026 1:18 | https://www.gaziantep.bel.tr/ |

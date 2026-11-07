@@ -47,3 +47,11 @@ I opened the page source with Ctrl+U and searched for text that appears on the w
 The menu word “haberler” and the news title “GAZİANTEP BÜYÜKŞEHİR’DEN ULAŞIM HİZMETLERİNDE YENİ DİJİTAL HAMLE” were already present in the HTML source. I also checked the Elements panel and found the same text there (4 matches for the news title).
 This means the server sends the main content as ready-made HTML, so I conclude that the home page uses server-side rendering.
 The page still loads many JavaScript files, probably for features such as the news sliders, but the main text is already present without JavaScript. This is beneficial for users on slow connections, and also for search engines, which can read the important content without having to run JavaScript. [A6]
+
+## A7. SEO basics.
+
+I checked the home page for basic SEO elements.
+The page has a clear title (“Gaziantep Büyükşehir Belediyesi”) and a meta description that explains the purpose of the website. It also has a canonical link pointing to https://www.gaziantep.bel.tr/. The page language is set to Turkish (lang="tr"), and there is only one h1 heading.
+I could not find any rel="sponsored" or rel="ugc" links. This is expected, since the website does not appear to have advertisements or user comments.
+Overall, the basic SEO elements are present, and I did not find any major SEO problems on the home page.
+The canonical link also shows that the website prefers the www address. This is consistent with my finding in A2, where some pages opened without www. [A7]
