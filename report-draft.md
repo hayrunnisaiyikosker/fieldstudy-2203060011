@@ -27,3 +27,10 @@ The first request was for the HTML document. It used the GET method and returned
 The HTML file itself was small (about 76 kB), yet the page as a whole made 52 requests and transferred 12.9 MB of data (14.5 MB in total resources). The DOMContentLoaded event fired at 2.87 seconds, and the full page finished loading at 6.35 seconds.
 The only Fetch/XHR requests were POST requests to Google Analytics. They returned status 204 (No Content), so they carried no page content.
 Overall, the page is quite heavy. The three largest files were two video segments (gaziantep.webm, 4.2 MB and 2.4 MB) and one GIF (chatbot2.gif, 2.3 MB), which is used for the live chat icon. Together they total about 8.9 MB, nearly two-thirds of all transferred data. This can slow the website down, especially on mobile devices with slow connections. I will examine this further in B1. [A3]
+
+## A4. A page that does not exist.
+
+I opened a made-up page address: /no-such-page-123. The server returned status 404 (Not Found), which is correct because the page does not exist.
+The visitor sees a simple error page with the municipality logo and the title “Page Not Found!”, along with a short message explaining that the page may have been removed or moved.
+The page offers useful navigation options, such as “Go to homepage” and “Go back” buttons. It also includes Quick Links, contact cards, and a bottom navigation bar.
+However, there is one problem: the error message is only in English. I tried switching the language to Turkish using the bottom menu, but the page stayed in English. This may confuse Turkish-speaking visitors, since this is a Turkish municipality website. [A4]

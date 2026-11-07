@@ -14,3 +14,7 @@
 | A3 | evidence/A3-summary.png | Network summary bar: number of requests and total size (cache disabled) | 07.11.2026 20:22 | https://www.gaziantep.bel.tr/ |
 | A3 | evidence/A3-xhr.png | One Fetch/XHR request and its headers | 07.11.2026 21:14 | https://www.gaziantep.bel.tr/ |
 | A3 | evidence/A3-largest.png | Network list sorted by size: largest files are a video and a GIF | 07.11.2026 21:36 | https://www.gaziantep.bel.tr/ |
+
+
+| A4 | evidence/A4-missingpage.png | 404 page: friendly message, homepage button; Network shows status 404 for the document | 07.11.2026 21:40 | https://www.gaziantep.bel.tr/no-such-page-123 |
+| A4 | evidence/A4-language.png | 404 page still in English after choosing Turkish in the language menu | 07.11.2026 21:46 | https://www.gaziantep.bel.tr/no-such-page-123 |
