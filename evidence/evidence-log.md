@@ -18,3 +18,7 @@
 
 | A4 | evidence/A4-missingpage.png | 404 page: friendly message, homepage button; Network shows status 404 for the document | 07.11.2026 21:40 | https://www.gaziantep.bel.tr/no-such-page-123 |
 | A4 | evidence/A4-language.png | 404 page still in English after choosing Turkish in the language menu | 07.11.2026 21:46 | https://www.gaziantep.bel.tr/no-such-page-123 |
+
+
+| A5 | evidence/A5-cache.png | Response headers of the main document: Cache-Control private, must-revalidate | 07.11.2026 22:03 | https://www.gaziantep.bel.tr/ |
+| A5 | evidence/A5-cache-image.png | Response headers of one image: no Cache-Control, ETag and Last-Modified present | 07.11.2026 22:05 | https://dosya.gaziantep.bel.tr/uploads/new/2026/10/a314e3fd-de6a-4278-9f8e-640659023ed0_original.JPG |

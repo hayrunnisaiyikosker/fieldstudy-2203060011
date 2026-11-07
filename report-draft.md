@@ -34,3 +34,10 @@ I opened a made-up page address: /no-such-page-123. The server returned status 4
 The visitor sees a simple error page with the municipality logo and the title “Page Not Found!”, along with a short message explaining that the page may have been removed or moved.
 The page offers useful navigation options, such as “Go to homepage” and “Go back” buttons. It also includes Quick Links, contact cards, and a bottom navigation bar.
 However, there is one problem: the error message is only in English. I tried switching the language to Turkish using the bottom menu, but the page stayed in English. This may confuse Turkish-speaking visitors, since this is a Turkish municipality website. [A4]
+
+## A5. Caching.
+
+The main page uses Cache-Control: private, must-revalidate. This means the browser may store the page on the user’s device, but it must check with the server whether the stored copy is still up to date before using it.
+For the image a314e3fd-...original.JPG, which is served from a different domain (dosya.gaziantep.bel.tr), the server response contained no Cache-Control header. The no-cache line I saw in the request headers was added by my browser because I had disabled the cache.
+The server did send ETag and Last-Modified headers, which allow the browser to check whether the image has changed. However, there is no explicit rule about how long the browser may keep the image.
+Since this is a large image that probably does not change often, setting a longer cache lifetime (for example, with Cache-Control: public, max-age=...) would help. Visitors would not need to download the same image again on later visits. [A5]
