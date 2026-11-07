@@ -55,3 +55,12 @@ The page has a clear title (“Gaziantep Büyükşehir Belediyesi”) and a meta
 I could not find any rel="sponsored" or rel="ugc" links. This is expected, since the website does not appear to have advertisements or user comments.
 Overall, the basic SEO elements are present, and I did not find any major SEO problems on the home page.
 The canonical link also shows that the website prefers the www address. This is consistent with my finding in A2, where some pages opened without www. [A7]
+
+## B1. Loading state.
+
+I reloaded the home page with the cache disabled and selected Chrome’s slowest network throttling preset. 
+(“3G”; in the current Chrome version, this is the lowest preset available, and the older “Slow 3G” label is no longer shown).
+For about 13 seconds, I saw only a loading screen with the municipality logo and three animated dots. The page was not completely blank, but nothing was usable during this time.
+After that, the text and page layout appeared, but the images loaded much more slowly. After one minute, only about 3.3 MB had been downloaded, and many news images were still loading. One image was only partially visible, and no placeholder was shown while it loaded.
+The small icons appeared as empty boxes, probably because the icon font had not loaded yet. The background video was also not visible.
+This can be a problem for visitors with slow connections. They have to wait a long time, and even after the page appears, some parts are still missing.
