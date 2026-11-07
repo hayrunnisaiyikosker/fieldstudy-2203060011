@@ -1,0 +1,3 @@
+## Part A: Under the hood
+
+**A1. HTTPS and redirects.** When I typed the address with `http://`, the server answered with a 301 Moved Permanently status and sent my browser to `https://www.gaziantep.bel.tr/`, which then loaded normally with status 200. The padlock shows a secure connection and a valid certificate. It was issued by Sectigo to `*.gaziantep.bel.tr` (a wildcard certificate that covers all subdomains), is valid from 19 February 2026 and expires on 20 February 2027. This means visitors who use an old `http://` link still end up on the secure version of the site, and the certificate is currently in good order. The expiry date is about three and a half months away, so the municipality should make sure it is renewed on time. [A1]

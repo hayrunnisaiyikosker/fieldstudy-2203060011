@@ -8,7 +8,7 @@
 
 \- \*\*Main purpose of the site:\*\* The official website of the municipality. It gives residents news and announcements, information about municipal services, and ways to contact the municipality.
 
-\- \*\*Audit date and time:\*\* 07.11.2026 15:00
+\- \*\*Audit date and time:\*\* 07.11.2026 16:00
 
 \- \*\*Browser:\*\* Google Chrome 156.0.8078.80 (64-bit), Windows 11
 

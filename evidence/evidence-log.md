@@ -1,0 +1,3 @@
+| A1 | evidence/A1-redirect.png | http:// request answered with 301 redirect to https:// | 07.11.2026 16:49 | http://www.gaziantep.bel.tr/ |
+| A1 | evidence/A1-padlock.png | Padlock: connection secure, certificate valid | 07.11.2026 16:5x | https://www.gaziantep.bel.tr/ |
+| A1 | evidence/A1-certificate.png | Certificate issuer and validity dates | 07.11.2026 16:5x | https://www.gaziantep.bel.tr/ |
