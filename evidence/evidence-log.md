@@ -22,3 +22,9 @@
 
 | A5 | evidence/A5-cache.png | Response headers of the main document: Cache-Control private, must-revalidate | 07.11.2026 22:03 | https://www.gaziantep.bel.tr/ |
 | A5 | evidence/A5-cache-image.png | Response headers of one image: no Cache-Control, ETag and Last-Modified present | 07.11.2026 22:05 | https://dosya.gaziantep.bel.tr/uploads/new/2026/10/a314e3fd-de6a-4278-9f8e-640659023ed0_original.JPG |
+
+
+| A6 | evidence/A6-source.png | Raw page source (Ctrl+U): search for the menu word "haberler" finds it | 07.11.2026 23:10 | view-source:https://www.gaziantep.bel.tr/ |
+| A6 | evidence/A6-elements.png | Elements panel: same menu word found | 07.11.2026 23:11 | https://www.gaziantep.bel.tr/ |
+| A6 | evidence/A6-source-news.png | Raw page source: a news headline from the slider is found | 07.11.2026 23:13 | view-source:https://www.gaziantep.bel.tr/ |
+| A6 | evidence/A6-elements-news.png | Elements panel: same headline found | 07.11.2026 23:14 | https://www.gaziantep.bel.tr/ |

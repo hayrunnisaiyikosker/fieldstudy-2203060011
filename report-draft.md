@@ -41,3 +41,9 @@ The main page uses Cache-Control: private, must-revalidate. This means the brows
 For the image a314e3fd-...original.JPG, which is served from a different domain (dosya.gaziantep.bel.tr), the server response contained no Cache-Control header. The no-cache line I saw in the request headers was added by my browser because I had disabled the cache.
 The server did send ETag and Last-Modified headers, which allow the browser to check whether the image has changed. However, there is no explicit rule about how long the browser may keep the image.
 Since this is a large image that probably does not change often, setting a longer cache lifetime (for example, with Cache-Control: public, max-age=...) would help. Visitors would not need to download the same image again on later visits. [A5]
+
+## A6. Where the page is built.
+I opened the page source with Ctrl+U and searched for text that appears on the website.
+The menu word “haberler” and the news title “GAZİANTEP BÜYÜKŞEHİR’DEN ULAŞIM HİZMETLERİNDE YENİ DİJİTAL HAMLE” were already present in the HTML source. I also checked the Elements panel and found the same text there (4 matches for the news title).
+This means the server sends the main content as ready-made HTML, so I conclude that the home page uses server-side rendering.
+The page still loads many JavaScript files, probably for features such as the news sliders, but the main text is already present without JavaScript. This is beneficial for users on slow connections, and also for search engines, which can read the important content without having to run JavaScript. [A6]
