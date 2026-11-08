@@ -1,0 +1,8 @@
+Task: find the organisation chart (Teşkilat Şeması)
+Keys: Tab, Shift+Tab, Enter
+Tab presses: about 25
+Focus outline: clearly visible, easy to follow
+Order: logical, left to right
+Skip to content link: not seen on first Tab
+Trap: yes, focus loops inside the news slider and cannot leave with Tab
+Result: could not reach the page with Tab alone; reached it by going backwards with Shift+Tab, then Enter

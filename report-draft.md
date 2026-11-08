@@ -96,3 +96,12 @@ However, when I clicked on the label “Adı”, nothing happened: the cursor di
 I checked the Elements panel and found the reason. The <label> for “Adı” has no for attribute, and the <input> has no id, so the two are not connected in the page code.
 The input does have a required attribute, which relates to my finding in B4: the field is required, but the website does not show this to visitors.
 This makes the labels less useful for mouse users, who cannot click a label to focus its field. It can also cause problems for screen reader users, because the field’s accessible name may not be announced correctly. [B5]
+
+## B6. Keyboard only.
+
+My task was to find the organisation chart (“Teşkilat Şeması”) using only the Tab, Shift+Tab and Enter keys.
+The focus outline was easy to see and follow, and the link order was logical, moving from left to right.
+However, when I pressed Tab for the first time, I could not find a “skip to content” link.
+As I continued pressing Tab, the focus entered the news slider and got stuck there. Even after about 25 presses, I could not leave the slider with Tab. I had to press Shift+Tab to go backwards, and then use Enter on a link to open the page.
+This behaves like a keyboard trap. It can be a serious problem for visitors who cannot use a mouse, such as people with motor disabilities, and for screen reader users. They may get stuck in the slider and be unable to reach the rest of the page.
+Adding a “skip to content” link would also help keyboard users bypass the menu and the slider more easily. [B6]

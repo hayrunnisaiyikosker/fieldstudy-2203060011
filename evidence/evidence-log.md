@@ -49,3 +49,11 @@
 
 | B5 | evidence/B5-labels.png | Visit form: clicking label text "Adı" does not move focus into the field | 08.11.2026 17:59 | https://gaziantep.bel.tr/tr/tesis-ziyaret-formu |
 | B5 | evidence/B5-label-code.png | Elements panel: <label> for "Adı" has no for attribute; <input> has no id but has required | 08.11.2026 18:00 | https://gaziantep.bel.tr/tr/tesis-ziyaret-formu |
+
+
+| B6 | evidence/B6-focus-visible.png | Keyboard-only: focus outline clearly visible on a menu link | 08.11.2026 22:18 | https://www.gaziantep.bel.tr/ |
+| B6 | evidence/B6-first-tab.png | First Tab press: no "skip to content" link appears | 08.11.2026 22:18 | https://www.gaziantep.bel.tr/ |
+| B6 | evidence/B6-trap-1.png | Focus inside the news slider (keyboard trap), first moment | 08.11.2026 22:19 | https://www.gaziantep.bel.tr/ |
+| B6 | evidence/B6-trap-2.png | Focus still inside the news slider after more Tab presses | 08.11.2026 22:20 | https://www.gaziantep.bel.tr/ |
+| B6 | evidence/B6-result.png | Organisation chart page reached with Shift+Tab then Enter | 08.11.2026 22:20 | https://www.gaziantep.bel.tr/tr/teskilat-semasi |
+| B6 | evidence/B6-keyboard-log.txt | Short log: task, keys, problems | 08.11.2026 22:21 | https://www.gaziantep.bel.tr/ |
