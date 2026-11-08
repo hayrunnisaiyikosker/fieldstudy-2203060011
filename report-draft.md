@@ -64,3 +64,11 @@ For about 13 seconds, I saw only a loading screen with the municipality logo and
 After that, the text and page layout appeared, but the images loaded much more slowly. After one minute, only about 3.3 MB had been downloaded, and many news images were still loading. One image was only partially visible, and no placeholder was shown while it loaded.
 The small icons appeared as empty boxes, probably because the icon font had not loaded yet. The background video was also not visible.
 This can be a problem for visitors with slow connections. They have to wait a long time, and even after the page appears, some parts are still missing.
+
+## B2. Empty state.
+
+On the events page, I typed “zzzqqq” into the search box and clicked the search button.
+The page did not show an error or a blank area. Instead, it displayed an icon and the message “Kayıt bulunamadı” (“No records found”), along with a “Tüm Etkinlikler” (“All Events”) button.
+The filter section showed “Toplam: 0 kayıt” (“Total: 0 records”) and a “Temizle” (“Clear”) button. The text I typed stayed in the search box, so visitors can easily correct their search if they made a mistake.
+I think this is a clear and friendly empty state because it offers the visitor another option. However, it could be improved if the message also suggested checking the spelling or trying a different search term. Also, “Sayfa: 1 / 1” (“Page: 1 / 1”) looks slightly odd when there are no results.
+Finally, this message is in Turkish, whereas the 404 page I checked in A4 was in English, which shows an inconsistency in language handling across the site. [B2]
