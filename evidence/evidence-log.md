@@ -67,3 +67,11 @@
 | B8 | evidence/B8-eye-button-code.png | Elements: announcement card button contains only an eye icon, no text or aria-label | 08.11.2026 23:35 | https://www.gaziantep.bel.tr/ |
 | B8 | evidence/B8-arrows-code.png | Elements: slider arrow buttons have aria-label "Previous slide" / "Next slide" in English | 08.11.2026 23:40 | https://www.gaziantep.bel.tr/ |
 | B8 | evidence/B8-chatbot-code.png | Elements: chat robot button uses a background image (chatbot2.gif), no visible text or aria-label | 08.11.2026 23:46 | https://www.gaziantep.bel.tr/ |
+
+
+| S1-A1 | evidence/S1-A1-site2.png | Second site (Şahinbey): http:// request and its status | 09.11.2026 1:20 | http://www.sahinbey.bel.tr/ |
+| S1-A3 | evidence/S1-A3-site2.png | Second site: Network summary bar, 152 requests, 30.3 MB transferred (cache disabled) | 09.11.2026 1:22 | https://www.sahinbey.bel.tr/Default |
+| S1-A4 | evidence/S1-A4-site2.png | Second site: made-up address answered with status 200 and a plain text page | 09.11.2026 1:25 | https://www.sahinbey.bel.tr/sayfayok?aspxerrorpath=/Default/no-such-page-123.aspx |
+| S1-A7 | evidence/S1-A7-site2.png | Second site: console checks for SEO basics | 09.11.2026 1:27 | https://www.sahinbey.bel.tr/ |
+| S1-B2 | evidence/S1-B2-site2.png | Second site: search for "zzzqqq" | 09.11.2026 1:28 | <arama sonucu adresi> |
+| S1-B7 | evidence/S1-B7-site2.png | Second site: Lighthouse accessibility result | 09.11.2026 1:29 | https://www.sahinbey.bel.tr/ |

@@ -64,7 +64,7 @@ I reloaded the home page with the cache disabled and selected Chrome’s slowest
 For about 13 seconds, I saw only a loading screen with the municipality logo and three animated dots. The page was not completely blank, but nothing was usable during this time.
 After that, the text and page layout appeared, but the images loaded much more slowly. After one minute, only about 3.3 MB had been downloaded, and many news images were still loading. One image was only partially visible, and no placeholder was shown while it loaded.
 The small icons appeared as empty boxes, probably because the icon font had not loaded yet. The background video was also not visible.
-This can be a problem for visitors with slow connections. They have to wait a long time, and even after the page appears, some parts are still missing.
+This can be a problem for visitors with slow connections. They have to wait a long time, and even after the page appears, some parts are still missing. [B1]
 
 ## B2. Empty state.
 
