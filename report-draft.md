@@ -43,6 +43,7 @@ The server did send ETag and Last-Modified headers, which allow the browser to c
 Since this is a large image that probably does not change often, setting a longer cache lifetime (for example, with Cache-Control: public, max-age=...) would help. Visitors would not need to download the same image again on later visits. [A5]
 
 ## A6. Where the page is built.
+
 I opened the page source with Ctrl+U and searched for text that appears on the website.
 The menu word “haberler” and the news title “GAZİANTEP BÜYÜKŞEHİR’DEN ULAŞIM HİZMETLERİNDE YENİ DİJİTAL HAMLE” were already present in the HTML source. I also checked the Elements panel and found the same text there (4 matches for the news title).
 This means the server sends the main content as ready-made HTML, so I conclude that the home page uses server-side rendering.
@@ -72,3 +73,8 @@ The page did not show an error or a blank area. Instead, it displayed an icon an
 The filter section showed “Toplam: 0 kayıt” (“Total: 0 records”) and a “Temizle” (“Clear”) button. The text I typed stayed in the search box, so visitors can easily correct their search if they made a mistake.
 I think this is a clear and friendly empty state because it offers the visitor another option. However, it could be improved if the message also suggested checking the spelling or trying a different search term. Also, “Sayfa: 1 / 1” (“Page: 1 / 1”) looks slightly odd when there are no results.
 Finally, this message is in Turkish, whereas the 404 page I checked in A4 was in English, which shows an inconsistency in language handling across the site. [B2]
+
+## B3. Error state.
+I set the network to Offline in DevTools (with the cache disabled) and then opened another page of the site, /tr/basin/duyurular?na
+The visitor did not see any message from the website. Instead, Chrome showed its own error page (ERR_INTERNET_DISCONNECTED) with the offline dinosaur game (“Press space to play”). The page also offers a “Reload” button.
+This is expected when a new page cannot be loaded at all, because the website’s own code cannot run without a connection. Therefore, I cannot say that the site handles this situation badly. I did not check whether the site offers an offline page. Afterwards, I set the network back to online. [B3]

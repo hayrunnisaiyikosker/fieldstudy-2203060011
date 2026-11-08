@@ -37,4 +37,8 @@
 | B1 | evidence/B1-loading-2.png | Page content visible, icons shown as empty boxes, about 30 s after reload | 08.11.2026 01:27 | https://www.gaziantep.bel.tr/ |
 | B1 | evidence/B1-loading-3.png | News photo only partly drawn, many images still pending, about 1 min after reload | 08.11.2026 01:28 | https://www.gaziantep.bel.tr/ |
 
+
 | B2 | evidence/B2-empty.png | Events filter with "zzzqqq": message "Kayıt bulunamadı", "Tüm Etkinlikler" button, total 0 records | 08.11.2026 14:45 | https://www.gaziantep.bel.tr/tr/basin/etkinlikler?name=zzzqqq |
+
+
+| B3 | evidence/B3-offline.png | Chrome's own offline error page shown when opening another page of the site while Offline (cache disabled) | 08.11.2026 16:55 | https://www.gaziantep.bel.tr/tr/basin/duyurular?name=tapu |
