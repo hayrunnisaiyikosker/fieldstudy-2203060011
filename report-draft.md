@@ -83,13 +83,16 @@ This is expected when a new page cannot be loaded at all, because the website’
 ## B4. Form validation.
 
 I opened the “Tesis Ziyaret Formu” (“Facility Visit Form”).
-
 Before clicking submit, I could not tell which fields were required, because there were no asterisks, red marks, or “required” labels.
-
 I typed only one letter in the first field (“Ziyarette Bulunacak Kurum / Kişi”) and left the “Adı” field empty. When I clicked submit, a small message appeared next to the empty field saying “Please fill out this field.”
-
 This message is in English and appears to come from Chrome’s built-in validation system rather than from the website itself. Turkish visitors may see it in Turkish, depending on their browser’s language settings.
-
 Showing the error next to the empty field is a good practice, and the text I had entered in the first field was not deleted.
-
 However, visitors cannot see which fields are required before submitting the form. The message also highlights only one missing field at a time and does not explain what the visitor needs to enter. [B4]
+
+## B5. Labels.
+
+On the “Tesis Ziyaret Formu”, every field has a visible label above it, such as “Adı”, “Soyadı”, “E-Posta” and “Telefon”. The phone field also shows an example format as a placeholder, which is helpful.
+However, when I clicked on the label “Adı”, nothing happened: the cursor did not move into the input field. The field became active only when I clicked inside the input box itself. The other fields I tested behaved the same way.
+I checked the Elements panel and found the reason. The <label> for “Adı” has no for attribute, and the <input> has no id, so the two are not connected in the page code.
+The input does have a required attribute, which relates to my finding in B4: the field is required, but the website does not show this to visitors.
+This makes the labels less useful for mouse users, who cannot click a label to focus its field. It can also cause problems for screen reader users, because the field’s accessible name may not be announced correctly. [B5]

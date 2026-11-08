@@ -44,4 +44,8 @@
 | B3 | evidence/B3-offline.png | Chrome's own offline error page shown when opening another page of the site while Offline (cache disabled) | 08.11.2026 16:55 | https://www.gaziantep.bel.tr/tr/basin/duyurular?name=tapu |
 
 
-| B4 | evidence/B4-form-errors.png | Visit form submitted with "Adı" empty: browser bubble "Please fill out this field." under the field; no required marks before submit | 08.11.2026 17:46 | <formun adresi> |
+| B4 | evidence/B4-form-errors.png | Visit form submitted with "Adı" empty: browser bubble "Please fill out this field." under the field; no required marks before submit | 08.11.2026 17:46 | https://www.gaziantep.bel.tr/tr/tesis-ziyaret-formu |
+
+
+| B5 | evidence/B5-labels.png | Visit form: clicking label text "Adı" does not move focus into the field | 08.11.2026 17:59 | https://gaziantep.bel.tr/tr/tesis-ziyaret-formu |
+| B5 | evidence/B5-label-code.png | Elements panel: <label> for "Adı" has no for attribute; <input> has no id but has required | 08.11.2026 18:00 | https://gaziantep.bel.tr/tr/tesis-ziyaret-formu |
