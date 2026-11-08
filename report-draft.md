@@ -76,7 +76,7 @@ Finally, this message is in Turkish, whereas the 404 page I checked in A4 was in
 
 ## B3. Error state.
 
-I set the network to Offline in DevTools (with the cache disabled) and then opened another page of the site, /tr/basin/duyurular?na
+I set the network to Offline in DevTools (with the cache disabled) and then opened another page of the site, /tr/basin/duyurular?name=tapu
 The visitor did not see any message from the website. Instead, Chrome showed its own error page (ERR_INTERNET_DISCONNECTED) with the offline dinosaur game (“Press space to play”). The page also offers a “Reload” button.
 This is expected when a new page cannot be loaded at all, because the website’s own code cannot run without a connection. Therefore, I cannot say that the site handles this situation badly. I did not check whether the site offers an offline page. Afterwards, I set the network back to online. [B3]
 
@@ -113,17 +113,17 @@ The home page scored 68/100 and the events page scored 67/100. Both scores show 
 
 On the home page, the main problems were:
 
-*Buttons without accessible names
-*Images without alt text
-*Form fields without labels
-*Links without discernible names
+- Buttons without accessible names
+- Images without alt text
+- Form fields without labels
+- Links without discernible names
 
 On the events page, the main problems were:
 
-*Form fields without labels
-*user-scalable="no" in the viewport settings, which can prevent users *from zooming on their phones
-*No main landmark on the page
-*Some text with insufficient contrast against its background
+- Form fields without labels
+- user-scalable="no" in the viewport settings, which can prevent users *from zooming on their phones
+- No main landmark on the page
+- Some text with insufficient contrast against its background
 
 The missing form labels on both pages are consistent with what I found in my manual test in B5. The missing main landmark is also related to my keyboard test in B6, where I could not find a “skip to content” link.
 I only tested in Mobile mode, so the scores may be different on desktop. Lighthouse also cannot detect every problem. For example, it did not detect the keyboard trap in the news slider, which is why I also did manual tests. [B7]
@@ -144,3 +144,42 @@ The elements I checked and their suggested names are shown below:
 | 3 | Announcements slider, right arrow | "Next slide" | "Sonraki duyuru" ("Next announcement") |
 | 4 | Chat robot button, fixed at the bottom right | None (background image only) | "Canlı sohbeti aç" ("Open live chat") |
 [B8]
+
+# Part C: Recommendations
+
+## What Works Well
+
+1. The website redirects old `http://` links to `https://` with a 301 status. It also has a valid certificate, so visitors use the secure version of the website [A1].
+2. The empty search result is clear and friendly. When I searched for "zzzqqq", the page showed a message and a "Tüm Etkinlikler" ("All Events") button. My search text also stayed in the box, so I could correct it easily [B2].
+
+## Three Problems to Fix First
+
+I put the keyboard problem first because some visitors cannot continue using the website. The heavy home page is second because it makes the website slow, especially on slow connections. The buttons and form fields without names or labels are third because they are easier to fix.
+
+### 1. The News Slider Traps Keyboard Users
+
+- **Problem:** When I used the Tab key, the focus got stuck inside the news slider, and I could not move on to the rest of the page.
+- **Evidence:** [B6], [B7].
+- **Who it affects:** People who cannot use a mouse, including people with motor disabilities and screen reader users.
+- **Fix:** Make it possible to move past the slider with the Tab key, and add a "skip to content" link at the top of the page.
+- **Effort:** Medium. **Impact:** High.
+
+### 2. The Home Page Is Too Heavy
+
+- **Problem:** The home page makes 52 requests and downloads about 12.9 MB. Two video files and one GIF make up almost two-thirds of this size. On a slow connection, I waited about 13 seconds for the page to become usable, and many images were still loading.
+- **Evidence:** [A3], [B1], [A5].
+- **Who it affects:** Visitors using mobile data or slow internet connections.
+- **Fix:** Compress the large GIF and videos, do not load the background video on mobile phones, load images only when they are needed (lazy loading), and increase the cache time for images.
+- **Effort:** Medium. **Impact:** High.
+
+### 3. Buttons and Form Fields Have No Names or Labels
+
+- **Problem:** The eye-icon buttons and the chat button have no accessible names. In the form, the labels are not connected to their input fields, and required fields are not shown before submitting.
+- **Evidence:** [B4], [B5], [B7], [B8].
+- **Who it affects:** Screen reader users and people who use the forms.
+- **Fix:** Add a clear name to every icon button, connect each label to its input field, and mark required fields with a star (*) and a short note.
+- **Effort:** Low. **Impact:** Medium.
+
+## Other Finding
+
+The 404 page and its language menu stay in English even though this is a Turkish website [A4]. This is different from other parts of the website, where messages are shown in Turkish [B2].
