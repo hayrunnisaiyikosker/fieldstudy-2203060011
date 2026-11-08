@@ -105,3 +105,42 @@ However, when I pressed Tab for the first time, I could not find a “skip to co
 As I continued pressing Tab, the focus entered the news slider and got stuck there. Even after about 25 presses, I could not leave the slider with Tab. I had to press Shift+Tab to go backwards, and then use Enter on a link to open the page.
 This behaves like a keyboard trap. It can be a serious problem for visitors who cannot use a mouse, such as people with motor disabilities, and for screen reader users. They may get stuck in the slider and be unable to reach the rest of the page.
 Adding a “skip to content” link would also help keyboard users bypass the menu and the slider more easily. [B6]
+
+## B7. Automated audit.
+
+I used Lighthouse to check the accessibility of the home page and the events page in Mobile mode.
+The home page scored 68/100 and the events page scored 67/100. Both scores show that the pages need improvement.
+
+On the home page, the main problems were:
+
+*Buttons without accessible names
+*Images without alt text
+*Form fields without labels
+*Links without discernible names
+
+On the events page, the main problems were:
+
+*Form fields without labels
+*user-scalable="no" in the viewport settings, which can prevent users *from zooming on their phones
+*No main landmark on the page
+*Some text with insufficient contrast against its background
+
+The missing form labels on both pages are consistent with what I found in my manual test in B5. The missing main landmark is also related to my keyboard test in B6, where I could not find a “skip to content” link.
+I only tested in Mobile mode, so the scores may be different on desktop. Lighthouse also cannot detect every problem. For example, it did not detect the keyboard trap in the news slider, which is why I also did manual tests. [B7]
+
+## B8. Link and Button Text
+
+Lighthouse found 10 buttons without accessible names on the home page. I checked them and found that they are the round eye-icon buttons at the bottom right of each card in the "Duyurular" ("Announcements") slider.
+In the page code, these buttons contain only an icon, with no text or label. This means screen reader users may hear only the word "button" and will not know what it does. I think a better name would be "Duyuruyu oku" ("Read the announcement").
+The arrow buttons in the slider do have names, but they are in English ("Previous slide" and "Next slide"). Since the website is in Turkish, "Önceki duyuru" and "Sonraki duyuru" would be more appropriate.
+I also checked the chat robot button at the bottom right of the page. It uses only a background image (the same `chatbot2.gif` I found in A3), and I could not find any text or label for it. A name like "Canlı sohbeti aç" ("Open live chat") would make its purpose clearer.
+
+The elements I checked and their suggested names are shown below:
+
+| # | Element and location | Current text | Better text |
+|---|----------------------|--------------|-------------|
+| 1 | Home page, bottom right of each announcement card (10 buttons) | None (eye icon only) | "Duyuruyu oku" ("Read the announcement") |
+| 2 | Announcements slider, left arrow | "Previous slide" | "Önceki duyuru" ("Previous announcement") |
+| 3 | Announcements slider, right arrow | "Next slide" | "Sonraki duyuru" ("Next announcement") |
+| 4 | Chat robot button, fixed at the bottom right | None (background image only) | "Canlı sohbeti aç" ("Open live chat") |
+[B8]

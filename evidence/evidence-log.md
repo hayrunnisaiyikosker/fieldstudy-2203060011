@@ -57,3 +57,13 @@
 | B6 | evidence/B6-trap-2.png | Focus still inside the news slider after more Tab presses | 08.11.2026 22:20 | https://www.gaziantep.bel.tr/ |
 | B6 | evidence/B6-result.png | Organisation chart page reached with Shift+Tab then Enter | 08.11.2026 22:20 | https://www.gaziantep.bel.tr/tr/teskilat-semasi |
 | B6 | evidence/B6-keyboard-log.txt | Short log: task, keys, problems | 08.11.2026 22:21 | https://www.gaziantep.bel.tr/ |
+
+
+| B7 | evidence/B7-lighthouse-home.png | Lighthouse Accessibility report for the home page: score 68, issues listed | 08.11.2026 22:45 | https://www.gaziantep.bel.tr/ |
+| B7 | evidence/B7-lighthouse-inner.png | Lighthouse Accessibility report for the events page: score 67, issues listed | 08.11.2026 22:58 | https://www.gaziantep.bel.tr/tr/basin/etkinlikler?name=tiyatro |
+
+
+| B8 | evidence/B8-lighthouse-buttons.png | Lighthouse lists 10 buttons without an accessible name (same class "btn-circle") | 08.11.2026 22:45 | https://www.gaziantep.bel.tr/ |
+| B8 | evidence/B8-eye-button-code.png | Elements: announcement card button contains only an eye icon, no text or aria-label | 08.11.2026 23:35 | https://www.gaziantep.bel.tr/ |
+| B8 | evidence/B8-arrows-code.png | Elements: slider arrow buttons have aria-label "Previous slide" / "Next slide" in English | 08.11.2026 23:40 | https://www.gaziantep.bel.tr/ |
+| B8 | evidence/B8-chatbot-code.png | Elements: chat robot button uses a background image (chatbot2.gif), no visible text or aria-label | 08.11.2026 23:46 | https://www.gaziantep.bel.tr/ |
