@@ -75,6 +75,21 @@ I think this is a clear and friendly empty state because it offers the visitor a
 Finally, this message is in Turkish, whereas the 404 page I checked in A4 was in English, which shows an inconsistency in language handling across the site. [B2]
 
 ## B3. Error state.
+
 I set the network to Offline in DevTools (with the cache disabled) and then opened another page of the site, /tr/basin/duyurular?na
 The visitor did not see any message from the website. Instead, Chrome showed its own error page (ERR_INTERNET_DISCONNECTED) with the offline dinosaur game (“Press space to play”). The page also offers a “Reload” button.
 This is expected when a new page cannot be loaded at all, because the website’s own code cannot run without a connection. Therefore, I cannot say that the site handles this situation badly. I did not check whether the site offers an offline page. Afterwards, I set the network back to online. [B3]
+
+## B4. Form validation.
+
+I opened the “Tesis Ziyaret Formu” (“Facility Visit Form”).
+
+Before clicking submit, I could not tell which fields were required, because there were no asterisks, red marks, or “required” labels.
+
+I typed only one letter in the first field (“Ziyarette Bulunacak Kurum / Kişi”) and left the “Adı” field empty. When I clicked submit, a small message appeared next to the empty field saying “Please fill out this field.”
+
+This message is in English and appears to come from Chrome’s built-in validation system rather than from the website itself. Turkish visitors may see it in Turkish, depending on their browser’s language settings.
+
+Showing the error next to the empty field is a good practice, and the text I had entered in the first field was not deleted.
+
+However, visitors cannot see which fields are required before submitting the form. The message also highlights only one missing field at a time and does not explain what the visitor needs to enter. [B4]
