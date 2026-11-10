@@ -3,7 +3,7 @@
 - **Site address:** <https://www.gaziantep.bel.tr/>
 - **Organisation:** Gaziantep Büyükşehir Belediyesi (Gaziantep Metropolitan Municipality)
 - **Main purpose of the site:** The official website of the municipality. It gives residents news and announcements, information about municipal services, and ways to contact the municipality.
-- **Audit date:** 07-08 November 2026 (first check 07.11.2026 16:49)
+- **Audit date:** 07-10 November 2026 (first check 07.11.2026 16:49)
 - **Browser:** Google Chrome 156.0.8078.80 (64-bit), Windows 11
 - **Tier attempted:** Core + Stretch (S1) + Stretch (S2) + Challenge
 

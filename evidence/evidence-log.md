@@ -30,7 +30,7 @@
 | A6 | evidence/A6-elements-news.png | Elements panel: same headline found | 07.11.2026 23:14 | https://www.gaziantep.bel.tr/ |
 
 
-| A7 | evidence/A7-seo.png | Console checks: title, meta description, canonical, lang, h1 count, sponsored/ugc count | 08.11.2026 1:18 | https://www.gaziantep.bel.tr/ |
+| A7 | evidence/A7-seo.png | Console checks: title, meta description, canonical, lang, h1 count, sponsored/ugc count | 08.11.2026 01:18 | https://www.gaziantep.bel.tr/ |
 
 
 | B1 | evidence/B1-loading-1.png | Loading screen (logo and three dots), about 11 s after reload with the 3G preset | 08.11.2026 01:27 | https://www.gaziantep.bel.tr/ |
@@ -53,7 +53,7 @@
 
 | B6 | evidence/B6-focus-visible.png | Keyboard-only: focus outline clearly visible on a menu link | 08.11.2026 22:18 | https://www.gaziantep.bel.tr/ |
 | B6 | evidence/B6-first-tab.png | First Tab press: no "skip to content" link appears | 08.11.2026 22:18 | https://www.gaziantep.bel.tr/ |
-| B6 | evidence/B6-trap-1.png | Focus inside the news slider (keyboard trap), first moment | 08.11.2026 22:19 | https://www.gaziantep.bel.tr/ |
+| B6 | evidence/B6-trap-1.png | Focus inside the news slider (works like a keyboard trap), first moment | 08.11.2026 22:19 | https://www.gaziantep.bel.tr/ |
 | B6 | evidence/B6-trap-2.png | Focus still inside the news slider after more Tab presses | 08.11.2026 22:20 | https://www.gaziantep.bel.tr/ |
 | B6 | evidence/B6-result.png | Organisation chart page reached with Shift+Tab then Enter | 08.11.2026 22:20 | https://www.gaziantep.bel.tr/tr/teskilat-semasi |
 | B6 | evidence/B6-keyboard-log.txt | Short log: task, keys, problems | 08.11.2026 22:21 | https://www.gaziantep.bel.tr/ |
@@ -69,9 +69,11 @@
 | B8 | evidence/B8-chatbot-code.png | Elements: chat robot button uses a background image (chatbot2.gif), no visible text or aria-label | 08.11.2026 23:46 | https://www.gaziantep.bel.tr/ |
 
 
-| S1-A1 | evidence/S1-A1-site2.png | Second site (Şahinbey): http:// request and its status | 09.11.2026 1:20 | http://www.sahinbey.bel.tr/ |
-| S1-A3 | evidence/S1-A3-site2.png | Second site: Network summary bar, 152 requests, 30.3 MB transferred (cache disabled) | 09.11.2026 1:22 | https://www.sahinbey.bel.tr/Default |
-| S1-A4 | evidence/S1-A4-site2.png | Second site: made-up address answered with status 200 and a plain text page | 09.11.2026 1:25 | https://www.sahinbey.bel.tr/sayfayok?aspxerrorpath=/Default/no-such-page-123.aspx |
-| S1-A7 | evidence/S1-A7-site2.png | Second site: console checks for SEO basics | 09.11.2026 1:27 | https://www.sahinbey.bel.tr/ |
-| S1-B2 | evidence/S1-B2-site2.png | Second site: search for "zzzqqq" | 09.11.2026 1:28 | <arama sonucu adresi> |
-| S1-B7 | evidence/S1-B7-site2.png | Second site: Lighthouse accessibility result | 09.11.2026 1:29 | https://www.sahinbey.bel.tr/ |
+| S1-A1 | evidence/S1-A1-site2.png | Second site (Şahinbey): http:// request answered with 302 Found, Location /index.aspx | 10.11.2026 13:04 | http://www.sahinbey.bel.tr/ |
+| S1-A1-final | evidence/S1-A1-final-site2.png | Second site: final page after the redirects, status 200 | 10.11.2026 12:33 | https://www.sahinbey.bel.tr/Default |
+| S1-A1-certificate | evidence/S1-A1-certificate-site2.png | Second site: certificate issued by RapidSSL, valid 29.01.2026 to 06.02.2027 | 10.11.2026 12:50 | https://sahinbey.bel.tr/baskan |
+| S1-A3 | evidence/S1-A3-site2.png | Second site: Network summary bar, 152 requests, 30.3 MB transferred (cache disabled) | 09.11.2026 01:10 | https://www.sahinbey.bel.tr/Default |
+| S1-A4 | evidence/S1-A4-site2.png | Second site: made-up address answered with status 200 and a plain text page | 09.11.2026 01:13 | https://www.sahinbey.bel.tr/sayfayok?aspxerrorpath=/Default/no-such-page-123.aspx |
+| S1-A7 | evidence/S1-A7-site2.png | Second site: console checks for SEO basics | 09.11.2026 01:12 | https://www.sahinbey.bel.tr/Default |
+| S1-B2 | evidence/S1-B2-site2.png | Second site: search for "zzzqqq" in the map application search box, "Kayıt bulunamadı." | 09.11.2026 01:15 | https://kbs.sahinbey.bel.tr/keos/ |
+| S1-B7 | evidence/S1-B7-site2.png | Second site: Lighthouse accessibility result, score 69 (Mobile) | 09.11.2026 01:16 | https://www.sahinbey.bel.tr/Default |
